@@ -1,0 +1,23 @@
+def intercala3(una, dos, tres) :
+    len1 = len(una)
+    len2 = len(dos)
+    len3 = len(tres)
+   
+    maxNum = max( len1, len2, len3)
+    
+    str = ""
+    for i in range(maxNum) :
+        if (i < len1) :
+            str = str + una[i]
+        if (i < len2) :
+            str = str + dos[i]
+        if (i < len3) :
+            str = str + tres[i]
+        #print ("'{}' - '{}'".format(i,str))
+    return (str)
+    
+
+una = input (" 1a palabra : ")
+dos = input (" 2a palabra : ")
+tres = input (" 3a palabra : ")
+print (intercala3(una, dos, tres))
